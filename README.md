@@ -1,2 +1,4 @@
 # Lock-Sim
 This program simulates the probability of at least one digit in a combination lock already being set to the correct value.
+This problem came to mind as I was biking in to work one day, and served as my introduction to probability simulations. I had begun to notice that when I enter the passcode for my combination bike lock, one of the digits is often already set to the correct number in my code. I wondered about the probability of this, and figured it was equal to the complement of every number being set to the wrong value, which has a 9/10 chance for each number on the lock. This can be simply calculated as 1 - ((9/10)^4) = .3439. 
+I then thought it might be interesting to simulate this exact situation in python to back this calculation with emperical evidence, and more importantly, learn a bit about probability simulations. I was pleased to find that as the number of simulations increased, the value outputted approaches the theoretical value!
